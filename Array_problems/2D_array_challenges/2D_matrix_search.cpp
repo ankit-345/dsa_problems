@@ -14,8 +14,11 @@ int main(){
     
     int target;
     cin>> target;
-
-    int r=0, c=n-1;   // It is the top right position
+    
+    if(n==0){
+        return false;
+    }
+    int r=0, c=m-1;   // It is the top right position
     bool found = false;
     while(r<m && c>=0){
         if(target == a[r][c])
