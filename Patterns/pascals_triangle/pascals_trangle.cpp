@@ -17,7 +17,7 @@ vector< vector<int>> generate(int numRows){
         r[i].resize(i+1);
     
     
-    // For the digonals
+    // since in the start and diagonal of every row, there is 1.
     r[i][0] = r[i][i] = 1;
 
     // For the middle element and it will till the second last element thats what we want because at the start and end => we have 1.
